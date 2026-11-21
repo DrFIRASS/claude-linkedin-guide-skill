@@ -206,6 +206,8 @@ chemin dans la variable `CHROME_PATH`.
 **Claude invente des chiffres ?** Non. Les règles du skill interdisent toute statistique ou tout résultat inventé, et un
 script vérifie le contenu avant de créer le PDF. Relis quand même chaque guide avant de le partager.
 
+**Il existe une version en anglais ?** Oui, avec le post LinkedIn en anglais : [github.com/DrFIRASS/claude-linkedin-guide-skill-en](https://github.com/DrFIRASS/claude-linkedin-guide-skill-en).
+
 **Le post demande de commenter ?** Seulement dans l'image. Le texte ne contient jamais « commente » : LinkedIn réduit la
 portée des posts qui le demandent.
 
