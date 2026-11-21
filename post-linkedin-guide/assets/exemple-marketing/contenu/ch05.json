@@ -1,0 +1,58 @@
+{
+  "num": 5,
+  "title": "Stratégie de contenu",
+  "subtitle": "Des piliers clairs, un calendrier tenable et un contenu qui en devient dix",
+  "intro": "Publier tous les jours sans direction épuise vite. Avec Claude, tu définis des piliers de contenu reliés à tes offres, tu construis un calendrier que tu peux vraiment tenir, puis tu transformes chaque contenu de fond en dix formats. Tu traites moins de sujets, mais tu les exploites beaucoup mieux.",
+  "framework": {
+    "name": "La méthode 1 pour 10",
+    "steps": [
+      {"t": "Définir tes piliers", "d": "Choisis trois ou quatre thèmes reliés à ton offre et aux problèmes de ton ICP, pour que chaque contenu rapproche d'une vente."},
+      {"t": "Fixer un rythme tenable", "d": "Choisis un rythme que tu peux tenir trois mois, même pendant une semaine chargée, plutôt qu'un rythme idéal."},
+      {"t": "Produire un contenu phare", "d": "Chaque semaine, crée une pièce principale riche : vidéo, article, podcast ou étude de cas tirée de ta vraie expérience."},
+      {"t": "Décliner en dix", "d": "Découpe cette pièce en dix formats courts adaptés à chaque canal, sans repartir de zéro pour les idées."}
+    ]
+  },
+  "prompts": [
+    {
+      "title": "Les piliers de contenu",
+      "use": "Au démarrage, pour savoir de quoi parler et pourquoi.",
+      "prompt": "Tu es stratège de contenu. Voici mon socle de marque : [COLLE TA PROPOSITION DE VALEUR, TON ICP ET TES OFFRES]. Propose 4 piliers de contenu. Pour chacun, donne dans un tableau : nom du pilier, problème de l'ICP qu'il traite, offre qu'il prépare, 5 idées de sujets précis, format le plus adapté et objectif (attirer, convaincre ou faire acheter). Vérifie que l'ensemble couvre bien les trois objectifs. Écarte toute idée qui n'a aucun lien avec mes offres et dis lesquelles tu as écartées."
+    },
+    {
+      "title": "Le calendrier de 4 semaines",
+      "use": "Chaque mois, pour planifier sans te disperser.",
+      "prompt": "Agis comme un responsable éditorial. Mes piliers : [TES PILIERS]. Mes canaux : [TES CANAUX]. Temps disponible pour le contenu : [HEURES PAR SEMAINE]. Événements ou lancements du mois : [DATES CLÉS]. Construis un calendrier de 4 semaines dans un tableau : date, canal, pilier, sujet, format, type (contenu de fond ou déclinaison), temps estimé. Prévois un seul contenu de fond par semaine, le reste en déclinaisons. Si mon temps ne suffit pas, retire des publications au lieu de les entasser."
+    },
+    {
+      "title": "Un contenu, dix formats",
+      "use": "Après chaque contenu de fond, pour le décliner sans effort.",
+      "prompt": "Tu es spécialiste de la réutilisation de contenu. Je joins [TA TRANSCRIPTION, TON ARTICLE OU TES NOTES] sur le sujet [SUJET]. Ma cible : [TON ICP]. Mon guide de ton est dans le Projet. Tire de ce contenu 10 déclinaisons : 3 posts courts, 1 carrousel de 7 slides, 1 script de vidéo courte de 45 secondes, 1 fil de posts, 1 email, 2 citations à mettre en image, 1 FAQ de 5 questions. Utilise uniquement les idées présentes dans la source. Indique pour chaque déclinaison le passage source utilisé."
+    },
+    {
+      "title": "Le rédacteur en chef exigeant",
+      "use": "Avant de publier, pour renforcer un contenu de fond.",
+      "prompt": "Tu es rédacteur en chef et tu refuses les contenus moyens. Voici mon brouillon : [TON CONTENU]. Ma cible : [TON ICP]. Évalue-le avec ces questions : le lecteur apprend-il quelque chose de nouveau ? Mon expérience personnelle est-elle visible ? L'accroche donne-t-elle envie de continuer ? Chaque paragraphe sert-il le sujet ? Liste ensuite les 3 modifications les plus utiles, par ordre de priorité, avec un exemple de réécriture pour chacune. Termine par une note sur 10 et ce qui manque pour atteindre 9."
+    }
+  ],
+  "workflow": {
+    "title": "Workflow : d'un contenu de fond à dix formats",
+    "where": "Un Projet Claude + Artifacts",
+    "steps": [
+      "Ajoute ton socle de marque, ton guide de ton et tes piliers dans les fichiers d'un Projet « Contenu ».",
+      "Enregistre ton contenu de fond, puis joins sa transcription ou ton texte à une nouvelle conversation du Projet.",
+      "Lance « Un contenu, dix formats » et demande le résultat dans un Artifact pour tout relire d'un coup.",
+      "Corrige chaque déclinaison avec ta voix et ajoute une expérience personnelle là où elle manque.",
+      "Copie les versions finales dans ton outil de planification et cale-les dans ton calendrier du mois."
+    ]
+  },
+  "checklist": [
+    "Chaque pilier est relié à au moins une de mes offres.",
+    "Mon calendrier tient dans le temps que j'ai vraiment.",
+    "Je produis un seul contenu de fond par semaine, bien exploité.",
+    "Chaque déclinaison reprend une idée présente dans la source.",
+    "J'ai relu chaque texte et ajouté ma voix avant de publier.",
+    "Je sais quel objectif sert chaque contenu : attirer, convaincre ou vendre."
+  ],
+  "mistake": "Erreur fréquente : demander à Claude trente idées de posts sans piliers ni source. Tu obtiens des sujets génériques que tout le monde publie déjà, sans lien avec ce que tu vends.",
+  "tip": "Astuce Dr. Firas : enregistre-toi dix minutes en expliquant un sujet à voix haute, puis donne la transcription à Claude. Ta vraie voix et tes exemples rendent les dix déclinaisons bien plus naturelles."
+}

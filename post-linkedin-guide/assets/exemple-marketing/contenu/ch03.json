@@ -1,0 +1,58 @@
+{
+  "num": 3,
+  "title": "ICP et positionnement",
+  "subtitle": "Savoir exactement à qui tu parles et pourquoi on te choisit",
+  "intro": "Parler à tout le monde revient à ne convaincre personne. Ici, tu utilises Claude pour décrire ton client idéal à partir de tes vrais clients, découper ton marché en segments, choisir celui qui compte, puis formuler un positionnement que tes concurrents ne peuvent pas copier en changeant deux mots.",
+  "framework": {
+    "name": "La méthode du client phare",
+    "steps": [
+      {"t": "Partir des meilleurs", "d": "Liste tes 5 à 10 clients les plus rentables et agréables, puis cherche ce qu'ils ont réellement en commun."},
+      {"t": "Découper le marché", "d": "Regroupe les clients possibles par situation, problème urgent et capacité à payer, plutôt que par âge ou secteur seul."},
+      {"t": "Choisir un segment", "d": "Garde le segment où ton offre règle le problème le plus urgent et où tu peux atteindre les gens facilement."},
+      {"t": "Prendre position", "d": "Formule pourquoi ce segment devrait te choisir toi, face aux solutions qu'il utilise déjà aujourd'hui."}
+    ]
+  },
+  "prompts": [
+    {
+      "title": "Le portrait du client idéal",
+      "use": "Quand tu as déjà quelques clients et veux trouver leur point commun.",
+      "prompt": "Tu es stratège marketing. Voici la description de mes meilleurs clients : [POUR CHACUN : ACTIVITÉ, TAILLE, PROBLÈME DE DÉPART, RAISON DE L'ACHAT, RÉSULTAT OBTENU]. Identifie les points communs qui comptent vraiment dans la décision d'achat, pas les détails démographiques. Rédige ensuite une fiche ICP avec ces rubriques : situation, problème urgent, ce qu'il a déjà essayé, déclencheur d'achat, critères de choix, objections, où le trouver. Signale les rubriques où mes données sont trop faibles pour conclure."
+    },
+    {
+      "title": "La matrice de segments",
+      "use": "Pour comparer plusieurs cibles possibles et choisir avec méthode.",
+      "prompt": "Agis comme un consultant en stratégie. Mon offre : [TON OFFRE]. Je vois ces segments possibles : [SEGMENT 1], [SEGMENT 2], [SEGMENT 3], [SEGMENT 4]. Crée un tableau qui note chaque segment de 1 à 5 sur : urgence du problème, capacité à payer, facilité à les atteindre, intensité de la concurrence, lien avec mon expertise. Ajoute une colonne Total et une colonne « À vérifier ». Justifie chaque note en une phrase. Recommande un segment prioritaire et un segment de secours."
+    },
+    {
+      "title": "L'atelier positionnement",
+      "use": "Pour construire ta phrase de positionnement pas à pas.",
+      "prompt": "Tu es expert en positionnement. Aide-moi à écrire la phrase de positionnement de [NOM DE TON ENTREPRISE]. Pose-moi d'abord 6 questions, une à la fois, sur : ma cible, son problème, les solutions qu'elle utilise aujourd'hui, ce qui me rend différent, la preuve que j'ai, ce que je refuse de faire. Ensuite, propose 3 phrases sur ce modèle : « Pour (cible) qui (problème), (marque) est (catégorie) qui (bénéfice), contrairement à (alternative) ». Pour chaque phrase, donne son point fort et sa faiblesse."
+    },
+    {
+      "title": "Le test du copier-coller",
+      "use": "Pour vérifier que ton positionnement n'est pas interchangeable.",
+      "prompt": "Voici mon positionnement : [TA PHRASE DE POSITIONNEMENT]. Voici 3 concurrents : [CONCURRENT 1], [CONCURRENT 2], [CONCURRENT 3]. Fais ce test : remplace mon nom par celui de chaque concurrent et dis si la phrase reste vraie pour lui. Si oui, cite les mots qui la rendent interchangeable. Propose ensuite 2 réécritures plus précises, appuyées sur un élément concret qu'eux ne peuvent pas revendiquer. Réponds dans un tableau, puis conclus en 3 lignes."
+    }
+  ],
+  "workflow": {
+    "title": "Workflow : ta fiche ICP de référence",
+    "where": "Un Projet Claude + ton CRM (connecteur HubSpot ou export CSV)",
+    "steps": [
+      "Exporte la liste de tes clients depuis ton CRM ou ton tableur, ou connecte HubSpot à Claude.",
+      "Lance « Le portrait du client idéal » sur tes meilleurs clients, pas sur toute la liste.",
+      "Compare tes segments possibles avec « La matrice de segments » et choisis-en un seul.",
+      "Construis ta phrase avec « L'atelier positionnement », puis passe-la au « Test du copier-coller ».",
+      "Enregistre la fiche ICP et le positionnement dans ton Projet pour tous tes futurs textes."
+    ]
+  },
+  "checklist": [
+    "Ma fiche ICP décrit une situation et un problème, pas un simple âge.",
+    "Je sais où trouver mon client idéal, en ligne et hors ligne.",
+    "J'ai choisi un seul segment prioritaire, et je l'assume.",
+    "Je connais les solutions que ma cible utilise aujourd'hui.",
+    "Ma phrase devient fausse si j'y mets le nom d'un concurrent.",
+    "J'ai une preuve concrète pour soutenir ma différence."
+  ],
+  "mistake": "Erreur fréquente : laisser Claude inventer un persona avec un prénom, un âge et des loisirs. C'est joli, mais sans lien avec tes vrais clients, ça ne t'aide pas à vendre.",
+  "tip": "Astuce Dr. Firas : colle ta fiche ICP dans les instructions de ton Projet. Chaque texte que Claude écrira ensuite partira de ton vrai client, sans que tu aies à le rappeler."
+}

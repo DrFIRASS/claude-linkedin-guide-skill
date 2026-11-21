@@ -1,0 +1,25 @@
+{
+  "auteur": "Dr. Firas",
+  "mascotte": true,
+  "titre_court": "Le guide du marketing avec Claude 2026",
+  "fichier_pdf": "Le guide du marketing avec Claude 2026 - Dr Firas.pdf",
+  "mot_cle": "MARKETING",
+  "edition": "ÉDITION 2026",
+  "titre_couverture": [
+    "Le guide complet",
+    "du marketing",
+    "avec *Claude*",
+    "2026"
+  ],
+  "accroche": "Méthodes, prompts prêts à copier et workflows pour faire tourner ton marketing avec Claude.",
+  "mots_cote": [
+    "STRATÉGIE",
+    "PROMPTS",
+    "WORKFLOWS",
+    "CHECKLISTS"
+  ],
+  "bandeau": [
+    "Guide gratuit · par Dr. Firas",
+    "IA, automatisation et contenu, expliqués simplement"
+  ]
+}

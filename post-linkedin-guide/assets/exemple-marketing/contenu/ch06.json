@@ -1,0 +1,70 @@
+{
+  "num": 6,
+  "title": "SEO, AEO et visibilité IA",
+  "subtitle": "Écris des pages que Google affiche et que les assistants IA citent quand on leur pose une question sur ton sujet.",
+  "intro": "Tes clients ne tapent plus seulement des mots-clés dans Google. Ils posent des questions complètes à ChatGPT, Claude, Perplexity ou aux AI Overviews de Google. Pour être cité, ta page doit répondre clairement, être bien structurée et apporter une information qu'on ne trouve nulle part ailleurs.",
+  "framework": {
+    "name": "La méthode des 4 R",
+    "steps": [
+      {
+        "t": "Repérer les questions",
+        "d": "Liste les vraies questions que ton client pose, avec ses mots, sur Google, dans les forums et pendant tes échanges."
+      },
+      {
+        "t": "Répondre d'abord",
+        "d": "Place une réponse nette de deux ou trois phrases juste sous chaque titre, avant les détails et les exemples."
+      },
+      {
+        "t": "Rendre lisible",
+        "d": "Découpe la page en titres sous forme de questions, listes, tableaux et FAQ, pour qu'une IA trouve le bon passage."
+      },
+      {
+        "t": "Rajouter du neuf",
+        "d": "Ajoute ce que toi seul possèdes : chiffres de ton activité, tests maison, captures, avis argumenté et daté."
+      }
+    ]
+  },
+  "prompts": [
+    {
+      "title": "La carte des questions",
+      "use": "Avant d'écrire une page ou un article sur un sujet.",
+      "prompt": "Tu es consultant SEO et AEO. Mon activité : [ACTIVITÉ]. Ma cible : [CIBLE]. Sujet de la page : [SUJET]. Utilise la recherche web pour repérer les questions que ma cible pose vraiment sur ce sujet (Google, forums, Reddit, avis clients). Donne-moi un tableau de 15 lignes avec 4 colonnes : la question telle qu'un client la formulerait, l'intention (découvrir, comparer, acheter), la concurrence estimée (faible, moyenne, forte) et le type de contenu adapté. Termine par les 5 questions à traiter en priorité, avec une phrase de justification pour chacune."
+    },
+    {
+      "title": "Le test de citabilité",
+      "use": "Pour savoir pourquoi une page existante n'est jamais citée par les IA.",
+      "prompt": "Voici le texte d'une page de mon site : [COLLER LE TEXTE]. Mets-toi à la place d'un assistant IA qui doit répondre à la question « [QUESTION CIBLE] ». Dis-moi franchement si tu citerais cette page, et pourquoi. Ensuite, liste les problèmes du plus grave au moins grave : réponse enfouie, phrases vagues, aucune donnée propre, structure confuse, informations datées. Pour chaque problème, cite le passage concerné et propose sa version réécrite. Ne flatte pas la page, je veux la corriger."
+    },
+    {
+      "title": "Un bloc FAQ prêt à publier",
+      "use": "Pour ajouter une FAQ structurée en bas d'une page clé.",
+      "prompt": "Tu es rédacteur web spécialisé en contenu structuré. À partir de ma page : [TEXTE DE LA PAGE] et de ces questions clients : [LISTE DE QUESTIONS], rédige une FAQ de 8 questions. Règles : chaque réponse commence par une phrase qui répond directement, suivie de 2 phrases de précision au maximum, sans jargon. N'invente aucune information absente de mes sources : marque les manques avec [À VÉRIFIER]. Livre d'abord la FAQ en texte, puis le balisage JSON-LD de type FAQPage correspondant dans un bloc de code."
+    },
+    {
+      "title": "Tes données, ton contenu original",
+      "use": "Pour devenir une source que les IA et les journalistes reprennent.",
+      "prompt": "Je veux publier un contenu basé sur mes propres données pour être cité comme source. Mon secteur : [SECTEUR]. Données dont je dispose : [EXEMPLES : EXPORT CRM, RÉSULTATS D'ENQUÊTE, TICKETS SUPPORT, TESTS]. Avant de proposer quoi que ce soit, pose-moi 5 questions pour comprendre ce que ces données permettent vraiment de prouver. Attends mes réponses. Ensuite, propose 3 angles d'étude, avec pour chacun : le titre, la question à laquelle il répond, les chiffres à calculer et la méthode à expliquer pour rester crédible."
+    }
+  ],
+  "workflow": {
+    "title": "Workflow : une page que les IA peuvent citer",
+    "where": "Un Projet Claude avec la recherche web activée",
+    "steps": [
+      "Crée un Projet « SEO » et ajoute en fichiers ta fiche client, ton offre et tes meilleures pages.",
+      "Lance « La carte des questions » avec la recherche web et choisis une question prioritaire.",
+      "Colle ta page actuelle dans le « Test de citabilité » pour repérer ce qui bloque.",
+      "Demande la version réécrite dans un Artifact : réponse directe, titres en questions et FAQ.",
+      "Publie, puis pose la question chaque mois à ChatGPT, Claude et Perplexity et note qui est cité."
+    ]
+  },
+  "checklist": [
+    "La réponse principale apparaît dans les deux premières phrases de la page.",
+    "Chaque titre H2 reprend une question que ton client pose vraiment.",
+    "La page contient au moins une donnée, un test ou un exemple qui t'appartient.",
+    "Le nom de l'auteur, son rôle et la date de mise à jour sont visibles.",
+    "Une FAQ courte répond aux objections et aux questions de comparaison.",
+    "Ton fichier robots.txt ne bloque pas par erreur les robots des moteurs et des IA."
+  ],
+  "mistake": "Erreur fréquente : écrire pour un mot-clé au lieu d'une question. Une page qui tourne autour du sujet sans jamais donner de réponse nette n'offre rien à citer à un assistant IA.",
+  "tip": "Astuce Dr. Firas : note tes 10 questions clés dans un tableur et pose-les chaque mois à trois assistants IA. Les pages concurrentes citées te montrent le format et la profondeur à viser."
+}

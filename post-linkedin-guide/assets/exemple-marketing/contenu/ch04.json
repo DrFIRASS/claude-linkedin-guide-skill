@@ -1,0 +1,58 @@
+{
+  "num": 4,
+  "title": "Marque, message et offres",
+  "subtitle": "Dire clairement ce que tu fais, avec ta voix, et le vendre simplement",
+  "intro": "Une bonne offre mal expliquée ne se vend pas. Une belle marque sans offre claire non plus. Dans ce chapitre, tu construis avec Claude ta proposition de valeur, ton guide de ton de marque et une gamme d'offres simple, puis tu réunis le tout dans un socle que Claude réutilise à chaque texte.",
+  "framework": {
+    "name": "La méthode du socle de marque",
+    "steps": [
+      {"t": "Écrire la promesse", "d": "Formule en une phrase le résultat concret que ton client obtient, pour qui, et ce qui te rend crédible pour le promettre."},
+      {"t": "Fixer ta voix", "d": "Décris ton ton avec des exemples réels : les mots que tu utilises, ceux que tu bannis et ce que tu ne dis jamais."},
+      {"t": "Structurer les offres", "d": "Organise tes offres en une gamme simple : une porte d'entrée, une offre principale et, si besoin, une offre premium."},
+      {"t": "Créer le socle", "d": "Rassemble promesse, voix et offres dans un document unique que Claude consulte avant d'écrire quoi que ce soit pour toi."}
+    ]
+  },
+  "prompts": [
+    {
+      "title": "La proposition de valeur en 3 versions",
+      "use": "Quand tu n'arrives pas à expliquer ce que tu fais en une phrase.",
+      "prompt": "Tu es copywriter spécialisé dans les offres de services. Mon activité : [CE QUE TU FAIS]. Ma cible : [TON ICP]. Le résultat principal que j'apporte : [RÉSULTAT]. Ma preuve : [TÉMOIGNAGE, EXPÉRIENCE OU MÉTHODE]. Rédige 3 propositions de valeur : une très factuelle, une centrée sur le problème évité, une centrée sur le résultat. Chaque version comprend un titre de 12 mots maximum et un sous-titre de 25 mots maximum. Interdits : jargon, superlatifs, chiffres que je n'ai pas fournis. Termine par celle que tu choisirais et pourquoi."
+    },
+    {
+      "title": "Le guide de ton de marque",
+      "use": "Quand tu as déjà écrit des textes qui te ressemblent.",
+      "prompt": "Je joins des textes que j'ai écrits et qui me ressemblent : [POSTS, MAILS, PAGES DE VENTE]. Analyse-les comme un linguiste. Produis un guide de ton de marque avec : 4 traits de personnalité écrits sous la forme « nous sommes… mais pas… », la longueur habituelle de mes phrases, mes expressions récurrentes, les mots à bannir, ma façon d'ouvrir et de conclure, et un tableau de 5 exemples « à éviter » face à « à la place ». Le guide doit tenir sur une page pour servir de référence."
+    },
+    {
+      "title": "L'architecte d'offres",
+      "use": "Pour clarifier ta gamme d'offres et tes prix.",
+      "prompt": "Agis comme un consultant en offres pour indépendants et petites entreprises. Mes offres actuelles : [LISTE DE TES OFFRES ET PRIX]. Avant toute proposition, pose-moi 5 questions, une à la fois, sur : le temps que chaque offre me demande, ce que mes clients achètent le plus, ce qu'ils demandent sans que je le vende, mes limites de capacité et mon objectif de revenu. Ensuite, propose une gamme en 3 niveaux dans un tableau : nom, pour qui, promesse, contenu, format, fourchette de prix à tester, rôle dans la gamme. Dis aussi quoi retirer ou fusionner."
+    },
+    {
+      "title": "Le gardien de la marque",
+      "use": "Avant de publier un texte, pour vérifier qu'il sonne comme toi.",
+      "prompt": "Tu es le gardien de ma marque. Voici mon guide de ton : [COLLE TON GUIDE OU INDIQUE LE FICHIER DU PROJET]. Voici le texte à relire : [TON TEXTE]. Note-le de 1 à 10 sur trois critères : clarté de la promesse, respect du ton, cohérence avec mes offres. Cite chaque phrase qui sonne faux, explique pourquoi en une ligne et propose une réécriture. Ne réécris pas tout le texte, seulement les passages à corriger. Présente le résultat sous forme de liste."
+    }
+  ],
+  "workflow": {
+    "title": "Workflow : ton socle de marque réutilisable",
+    "where": "Un Projet Claude, puis une Skill",
+    "steps": [
+      "Joins à Claude cinq à dix textes qui te ressemblent et lance « Le guide de ton de marque ».",
+      "Écris ta promesse avec le premier prompt, en lui donnant ta fiche ICP du chapitre 3.",
+      "Clarifie ta gamme avec « L'architecte d'offres » et résume tes offres dans un tableau d'une page.",
+      "Réunis promesse, ton et offres dans un document « socle de marque » ajouté à ton Projet.",
+      "Transforme ce socle en Skill pour que Claude l'applique dès que tu lui demandes un texte marketing."
+    ]
+  },
+  "checklist": [
+    "Ma proposition de valeur se comprend sans explication orale.",
+    "Elle dit pour qui, quel résultat et pourquoi me croire.",
+    "Mon guide de ton contient des exemples réels, pas que des adjectifs.",
+    "J'ai une liste de mots que je n'utilise jamais.",
+    "Chaque offre a un rôle clair dans ma gamme.",
+    "Un inconnu sait vite quelle offre choisir pour son cas."
+  ],
+  "mistake": "Erreur fréquente : décrire ton ton avec des adjectifs comme « pro mais sympa ». Claude ne peut rien en faire. Donne-lui des textes réels et des exemples de ce que tu refuses.",
+  "tip": "Astuce Dr. Firas : quand tu corriges un texte de Claude, demande-lui d'ajouter la règle à ton guide de ton. Au fil des semaines, il écrit vraiment comme toi."
+}

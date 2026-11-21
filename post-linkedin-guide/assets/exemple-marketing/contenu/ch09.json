@@ -1,0 +1,70 @@
+{
+  "num": 9,
+  "title": "Publicité, landing pages et tests",
+  "subtitle": "Trouve des angles publicitaires, améliore ta page de destination et teste une seule chose à la fois.",
+  "intro": "En publicité, on perd surtout de l'argent en devinant. Claude t'aide à sortir des angles variés, à écrire des variantes, à auditer ta landing page comme un visiteur pressé et à formuler des hypothèses de test claires. Les décisions, elles, viennent de tes résultats réels, pas des intuitions.",
+  "framework": {
+    "name": "La boucle Angle, Page, Test",
+    "steps": [
+      {
+        "t": "Choisir l'angle",
+        "d": "Pars d'un problème, d'un désir ou d'une objection de ton client, puis décline chaque angle en plusieurs accroches."
+      },
+      {
+        "t": "Aligner la page",
+        "d": "La landing page reprend la promesse exacte de la pub, avec un seul objectif et un seul bouton."
+      },
+      {
+        "t": "Écrire l'hypothèse",
+        "d": "Formule chaque test ainsi : si je change X en Y, alors tel indicateur bouge, parce que j'ai observé Z."
+      },
+      {
+        "t": "Tester et noter",
+        "d": "Change une seule variable à la fois, attends assez de données, puis note le résultat et ce que tu en retiens."
+      }
+    ]
+  },
+  "prompts": [
+    {
+      "title": "La matrice d'angles publicitaires",
+      "use": "Avant de créer une nouvelle campagne.",
+      "prompt": "Tu es stratège en publicité payante. Produit : [PRODUIT]. Cible : [CIBLE]. Principales objections : [OBJECTIONS]. Plateforme : [META, LINKEDIN, GOOGLE…]. Propose 8 angles publicitaires différents : douleur, gain, preuve, comparaison, objection levée, coulisses, urgence réelle, identité. Présente-les dans un tableau : angle, accroche de 10 mots maximum, texte principal de 40 mots, idée de visuel, public à qui il parle le mieux. N'utilise aucun chiffre ni témoignage que je ne t'ai pas fourni."
+    },
+    {
+      "title": "Des variantes pour un test créatif",
+      "use": "Quand une pub tourne et que tu veux savoir ce qui la ferait mieux marcher.",
+      "prompt": "Voici ma publicité actuelle : [TEXTE ET DESCRIPTION DU VISUEL]. Je veux tester une seule variable : [ACCROCHE, VISUEL, APPEL À L'ACTION OU OFFRE]. Écris 4 variantes qui ne changent que cette variable, tout le reste identique. Pour chaque variante, indique en une phrase l'hypothèse testée. Ajoute ensuite un tableau de suivi vide avec ces colonnes : variante, dépense, impressions, clics, conversions, coût par conversion, décision."
+    },
+    {
+      "title": "L'audit de landing page",
+      "use": "Quand les gens cliquent sur ta pub mais n'agissent pas sur la page.",
+      "prompt": "Agis comme un visiteur de ma cible [CIBLE] qui arrive depuis cette pub : [TEXTE DE LA PUB]. Voici ma landing page : [CAPTURE D'ÉCRAN OU TEXTE DE LA PAGE]. Raconte d'abord ce que tu comprends en 5 secondes, puis ce qui te fait hésiter. Audite ensuite la page sur 6 points : cohérence avec la pub, clarté de la promesse, preuves, objections, appel à l'action, lecture sur mobile. Termine par un tableau : problème, correction proposée, priorité (haute, moyenne, basse)."
+    },
+    {
+      "title": "Des hypothèses de test A/B",
+      "use": "Pour décider quoi tester en premier sur une page ou une campagne.",
+      "prompt": "Je veux améliorer le taux de conversion de [PAGE OU CAMPAGNE]. Avant de proposer des tests, pose-moi 5 questions sur mon trafic, mes chiffres actuels et ce que disent mes clients. Attends mes réponses. Propose ensuite 5 hypothèses au format : « Si je change [X] en [Y], alors [INDICATEUR] va évoluer, parce que [OBSERVATION] ». Classe-les dans un tableau avec l'impact possible, l'effort et le trafic nécessaire pour conclure. Dis-moi lequel lancer en premier et pourquoi."
+    }
+  ],
+  "workflow": {
+    "title": "Workflow : de l'angle publicitaire au test A/B",
+    "where": "Une conversation Claude avec captures d'écran et export CSV",
+    "steps": [
+      "Lance la matrice d'angles et garde les 3 angles les plus proches de ce que disent tes clients.",
+      "Fais auditer ta landing page avec une capture mobile et corrige d'abord les priorités hautes.",
+      "Écris l'hypothèse du test, puis génère des variantes qui ne changent qu'une seule variable.",
+      "Lance le test dans ta régie publicitaire avec le même budget pour chaque variante.",
+      "À la fin, joins l'export CSV des résultats et demande à Claude ce qu'ils permettent vraiment de conclure."
+    ]
+  },
+  "checklist": [
+    "La promesse de la pub et le titre de la landing page disent la même chose.",
+    "La page a un seul objectif et un bouton visible sur mobile sans défiler.",
+    "Chaque test ne change qu'une seule variable à la fois.",
+    "L'hypothèse est écrite avant le lancement, avec l'indicateur à suivre.",
+    "Aucun chiffre, avis ou logo client n'est affiché sans preuve réelle.",
+    "Le test tourne assez longtemps pour ne pas conclure sur quelques clics."
+  ],
+  "mistake": "Erreur fréquente : arrêter un test au bout de deux jours parce qu'une variante semble gagner. Avec trop peu de données, tu décides au hasard et tu crois avoir appris quelque chose.",
+  "tip": "Astuce Dr. Firas : tiens un journal des tests dans un tableur : hypothèse, dates, résultat, leçon. Ajoute-le à ton Projet Claude pour qu'il ne te propose jamais un test déjà fait."
+}

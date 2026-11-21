@@ -1,0 +1,121 @@
+{
+  "sommaire_00": {
+    "t": "Avant de commencer",
+    "st": "Prépare Claude en 10 minutes"
+  },
+  "sommaire_plan": {
+    "t": "Ton plan d'action sur 30 jours",
+    "st": "Par où commencer, semaine par semaine"
+  },
+  "setup_kicker": "CHAPITRE 00 · AVANT DE COMMENCER",
+  "setup_titre": [
+    "Prépare Claude",
+    "en 10 minutes"
+  ],
+  "setup_intro": "Un Claude qui ne connaît ni ta marque ni tes clients te donne des réponses génériques. Avant d'utiliser le moindre prompt de ce guide, donne-lui ton contexte une seule fois. Ensuite, chaque conversation part de là.",
+  "setup_steps": [
+    {
+      "t": "Crée un Projet « Marketing »",
+      "d": "Un Projet regroupe tes conversations, tes fichiers et tes instructions. Tout ce que tu y mets est lu dans chaque nouvelle conversation du Projet."
+    },
+    {
+      "t": "Rédige ta fiche marque avec Claude",
+      "d": "Lance le prompt 1 à droite. Claude te pose ses questions, puis rédige la fiche. Enregistre-la et ajoute-la aux fichiers du Projet."
+    },
+    {
+      "t": "Colle les instructions du Projet",
+      "d": "Copie le prompt 2 dans les instructions du Projet. Ajoute aussi tes meilleurs posts, ta page de vente et quelques avis clients."
+    }
+  ],
+  "setup_prompts": [
+    {
+      "title": "Prompt 1 · Ta fiche marque",
+      "use": "À lancer une seule fois, dans le Projet",
+      "prompt": "Tu es directeur marketing. Aide-moi à rédiger la fiche marque de [NOM DE TON ENTREPRISE]. Pose-moi tes questions une par une (10 au maximum) : ce que je vends, à qui, le problème que je règle, mes prix, mes concurrents, ce qui me rend différent, mon ton, les mots que je refuse d'utiliser, mes canaux, mon objectif des 90 prochains jours. Attends ma réponse avant chaque nouvelle question. À la fin, rédige une fiche d'une page avec des titres clairs, dans un document que je peux télécharger."
+    },
+    {
+      "title": "Prompt 2 · Les instructions du Projet",
+      "use": "À coller dans les instructions du Projet",
+      "prompt": "Tu es mon équipe marketing. Avant chaque réponse, appuie-toi sur la fiche marque et les fichiers du Projet. Écris en français, en tutoyant le lecteur, avec des phrases courtes et sans jargon. N'invente jamais de chiffre, d'avis client ou de résultat : si une information te manque, demande-la ou écris [INFO MANQUANTE]. Quand je te demande un livrable, propose d'abord un plan court, puis produis la version finale. Signale toujours ce que tu as supposé."
+    }
+  ],
+  "features_titre": "LES FONCTIONS UTILISÉES DANS CE GUIDE",
+  "features": [
+    {
+      "t": "Projets :",
+      "d": "ton contexte (instructions et fichiers) partagé par toutes les conversations."
+    },
+    {
+      "t": "Artifacts :",
+      "d": "documents, tableaux et pages créés à côté de la conversation, à modifier et télécharger."
+    },
+    {
+      "t": "Recherche web :",
+      "d": "Claude va chercher des sources récentes et les cite."
+    },
+    {
+      "t": "Skills :",
+      "d": "des instructions réutilisables que Claude charge seul quand la tâche correspond."
+    },
+    {
+      "t": "Connecteurs :",
+      "d": "Google Drive, Gmail, Notion, HubSpot, Slack… pour travailler sur tes vraies données."
+    }
+  ],
+  "plan_titre": [
+    "30 jours pour mettre",
+    "Claude au travail"
+  ],
+  "plan_intro": "Tu n'as pas besoin de tout faire. Une semaine, un bloc, quelques actions. À la fin du mois, Claude connaît ta marque, ton contenu sort chaque semaine et tu lis tes chiffres sans y passer ton dimanche.",
+  "plan30": [
+    {
+      "t": "Les fondations",
+      "chapitres": "Chapitres 00, 01, 02",
+      "actions": [
+        "Créer le Projet « Marketing » et la fiche marque",
+        "Fixer 1 objectif chiffré pour 90 jours",
+        "Rassembler 20 avis ou messages de clients",
+        "Faire analyser 3 concurrents par Claude"
+      ]
+    },
+    {
+      "t": "Le message",
+      "chapitres": "Chapitres 03, 04",
+      "actions": [
+        "Écrire ton client idéal sur une page",
+        "Choisir ta phrase de positionnement",
+        "Réécrire ta proposition de valeur",
+        "Mettre à jour ta bio et ta page de vente"
+      ]
+    },
+    {
+      "t": "Le contenu",
+      "chapitres": "Chapitres 05, 06, 07",
+      "actions": [
+        "Définir 3 ou 4 piliers de contenu",
+        "Planifier 4 semaines de publications",
+        "Transformer 1 contenu long en 10 formats",
+        "Ajouter une FAQ claire à ta page principale"
+      ]
+    },
+    {
+      "t": "La conversion et la mesure",
+      "chapitres": "Chapitres 08, 09, 10",
+      "actions": [
+        "Écrire ta séquence de bienvenue",
+        "Faire auditer ta page de vente",
+        "Lancer 1 test A/B avec une seule hypothèse",
+        "Créer ton rapport hebdomadaire en Skill"
+      ]
+    }
+  ],
+  "fin_titre": "À toi de jouer",
+  "fin_paras": [
+    "Ce guide ne remplace pas ton jugement. Claude écrit vite, analyse vite et ne se fatigue pas. Toi, tu connais tes clients, tu décides et tu vérifies.",
+    "Commence par la page 03. Prépare ton Projet. Puis choisis un seul chapitre cette semaine et applique-le jusqu'au bout.",
+    "Le reste viendra plus vite que tu ne le crois."
+  ],
+  "fin_signature": "IA, automatisation et création de contenu pour débutants curieux",
+  "fin_url": "guide.dr-firas.vip",
+  "legal": "Guide indépendant et gratuit, réalisé par Dr. Firas. Il n'est ni publié ni validé par Anthropic. Claude est une marque d'Anthropic. Les fonctions citées sont celles disponibles en novembre 2026 et peuvent varier selon ton abonnement."
+}

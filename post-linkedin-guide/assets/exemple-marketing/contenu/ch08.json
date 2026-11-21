@@ -1,0 +1,70 @@
+{
+  "num": 8,
+  "title": "Emailing, séquences et CRM",
+  "subtitle": "Envoie le bon message à chaque contact selon son étape, avec des séquences que Claude t'aide à écrire et à suivre.",
+  "intro": "Un abonné qui vient de s'inscrire n'attend pas le même email qu'un client fidèle ou qu'un prospect silencieux depuis deux mois. Le cycle de vie, c'est simplement adapter tes messages à l'étape de chaque contact. Avec Claude et ton CRM, tu écris tes séquences, tu segmentes ta liste et tu prépares tes relances.",
+  "framework": {
+    "name": "Le cycle en 4 temps",
+    "steps": [
+      {
+        "t": "Accueillir",
+        "d": "Une séquence de bienvenue courte qui livre ce qui a été promis, présente qui tu es et apporte un premier résultat."
+      },
+      {
+        "t": "Segmenter",
+        "d": "Classe tes contacts selon leur étape et leur comportement : nouvel inscrit, intéressé, client, inactif."
+      },
+      {
+        "t": "Relancer",
+        "d": "Prévois des relances utiles pour les devis sans réponse, les essais terminés et les contacts devenus silencieux."
+      },
+      {
+        "t": "Fidéliser",
+        "d": "Après l'achat, aide ton client à réussir, demande son avis, puis propose la suite logique au bon moment."
+      }
+    ]
+  },
+  "prompts": [
+    {
+      "title": "La séquence de bienvenue",
+      "use": "Quand tu lances une newsletter ou un nouveau formulaire d'inscription.",
+      "prompt": "Tu es spécialiste de l'emailing pour les petites entreprises. Mon offre : [OFFRE]. Ce que l'abonné reçoit en s'inscrivant : [CADEAU D'INSCRIPTION]. Ma cible : [CIBLE]. Écris une séquence de bienvenue de 5 emails sur 10 jours. Commence par un tableau : jour d'envoi, objectif de l'email, 2 objets possibles, texte de prévisualisation. Rédige ensuite les 5 emails en entier : 150 mots maximum chacun, un seul appel à l'action par email, ton direct et chaleureux, tutoiement."
+    },
+    {
+      "title": "Des relances qui ne harcèlent pas",
+      "use": "Pour un devis sans réponse ou un contact devenu silencieux.",
+      "prompt": "Je dois relancer [TYPE DE CONTACTS : DEVIS ENVOYÉS, ESSAIS TERMINÉS, CLIENTS INACTIFS]. Contexte : [SITUATION ET DÉLAI DEPUIS LE DERNIER ÉCHANGE]. Avant d'écrire, pose-moi 4 questions pour comprendre la raison probable du silence. Attends mes réponses. Propose ensuite 3 relances espacées, chacune avec un angle différent : une information utile, une question simple, une porte de sortie polie. Chaque relance fait moins de 80 mots, indique le délai d'envoi et ne culpabilise jamais le contact."
+    },
+    {
+      "title": "Segmenter à partir d'un export",
+      "use": "Quand ta liste de contacts est un grand fourre-tout.",
+      "prompt": "Voici l'export CSV de mes contacts : [FICHIER JOINT]. Les colonnes sont : [LISTE DES COLONNES]. Mon activité : [ACTIVITÉ]. Analyse le fichier et propose 4 à 6 segments utiles. Pour chaque segment, donne dans un tableau : nom, règle de filtrage précise basée sur les colonnes existantes, nombre de contacts concernés, message à leur envoyer en priorité. Signale ensuite les données manquantes ou incohérentes qui gênent la segmentation. N'invente aucune colonne et ne suppose aucune donnée absente du fichier."
+    },
+    {
+      "title": "L'audit d'une séquence existante",
+      "use": "Quand une séquence tourne déjà mais que les résultats déçoivent.",
+      "prompt": "Voici ma séquence actuelle : [EMAILS AVEC LEURS DÉLAIS] et ses résultats par email : [OUVERTURES, CLICS, DÉSINSCRIPTIONS, RÉPONSES]. Agis comme un expert en emailing exigeant. Identifie l'email où les lecteurs décrochent et explique les causes possibles. Critique les objets, la longueur et les appels à l'action, sans ménagement. Termine par un tableau des 5 changements à faire, classés par impact attendu et par effort, puis réécris l'objet le plus faible en 3 versions."
+    }
+  ],
+  "workflow": {
+    "title": "Workflow : ta séquence de bienvenue avec HubSpot",
+    "where": "Un Projet Claude + connecteur HubSpot",
+    "steps": [
+      "Connecte HubSpot à Claude et demande un résumé de tes contacts par étape du cycle de vie.",
+      "Dépose ton offre et ton cadeau d'inscription dans le Projet, puis lance « La séquence de bienvenue ».",
+      "Relis les emails dans un Artifact, ajuste le ton et vérifie chaque lien et chaque promesse.",
+      "Copie la séquence dans HubSpot ou ton outil d'emailing et règle les délais entre les envois.",
+      "Après un mois, exporte les résultats et lance l'audit de séquence pour corriger l'email le plus faible."
+    ]
+  },
+  "checklist": [
+    "Le premier email livre tout de suite ce qui a été promis à l'inscription.",
+    "Chaque email a un seul objectif et un seul appel à l'action.",
+    "Les objets sont clairs et ne promettent rien que l'email ne tient pas.",
+    "Chaque contact a une étape du cycle de vie à jour dans ton CRM.",
+    "Les relances s'arrêtent dès que le contact répond ou achète.",
+    "Le lien de désinscription est visible et fonctionne."
+  ],
+  "mistake": "Erreur fréquente : envoyer la même newsletter à toute ta liste. Le nouvel inscrit, le client fidèle et le prospect froid reçoivent un message qui ne parle vraiment à aucun des trois.",
+  "tip": "Astuce Dr. Firas : demande à Claude d'écrire chaque email pour une seule personne réelle, avec sa situation précise. Généralise seulement ensuite : le ton reste humain et concret."
+}

@@ -1,0 +1,58 @@
+{
+  "num": 1,
+  "title": "Stratégie marketing",
+  "subtitle": "Un plan clair sur 90 jours avant d'écrire la moindre ligne",
+  "intro": "Sans stratégie, chaque post et chaque campagne part dans une direction différente. Dans ce chapitre, tu utilises Claude comme un associé exigeant : il t'aide à poser un constat honnête, à fixer un objectif mesurable, à choisir trois priorités et à transformer le tout en plan sur 90 jours que tu suis semaine après semaine.",
+  "framework": {
+    "name": "La méthode CAP 90",
+    "steps": [
+      {"t": "Faire le constat", "d": "Rassemble ce qui marche, ce qui bloque et tes chiffres actuels pour partir de ta situation réelle, pas d'un idéal."},
+      {"t": "Fixer une ambition", "d": "Choisis un seul objectif mesurable à 90 jours, relié à ton chiffre d'affaires, et écris-le en une phrase."},
+      {"t": "Choisir trois priorités", "d": "Garde trois chantiers maximum qui servent directement l'objectif, et note ce que tu arrêtes pour faire de la place."},
+      {"t": "Piloter chaque semaine", "d": "Découpe le plan en actions hebdomadaires et fais un point court chaque vendredi pour ajuster ce qui ne marche pas."}
+    ]
+  },
+  "prompts": [
+    {
+      "title": "Le diagnostic express",
+      "use": "Avant de planifier, pour savoir exactement d'où tu pars.",
+      "prompt": "Tu es un directeur marketing qui accompagne des petites entreprises. Avant de proposer quoi que ce soit, pose-moi 8 questions, une par une, pour comprendre mon activité : [TON ACTIVITÉ], mes clients actuels, mes canaux, mon budget mensuel de [BUDGET] et le temps dont je dispose. Attends ma réponse avant chaque nouvelle question. À la fin, résume ma situation dans un tableau à 3 colonnes : Ce qui marche, Ce qui bloque, Ce qui manque. Termine par les 2 problèmes à traiter en premier, avec une phrase de justification pour chacun."
+    },
+    {
+      "title": "De l'envie à l'objectif",
+      "use": "Quand ton objectif est flou, du genre « avoir plus de clients ».",
+      "prompt": "Agis comme un coach business direct. Mon objectif actuel est : [TON OBJECTIF FLOU]. Mon point de départ : [CHIFFRES ACTUELS : CHIFFRE D'AFFAIRES, NOMBRE DE CLIENTS, PROSPECTS PAR MOIS]. Propose 3 versions de cet objectif, chacune mesurable, datée à 90 jours et réaliste vu mon point de départ. Pour chaque version, donne : l'indicateur à suivre, la valeur cible, ce qu'elle exige de moi chaque semaine et le principal risque. Présente le tout dans un tableau, puis recommande une version et explique ton choix en 3 phrases."
+    },
+    {
+      "title": "Le plan sur 12 semaines",
+      "use": "Une fois l'objectif validé, pour obtenir un plan semaine par semaine.",
+      "prompt": "Tu es responsable marketing dans une petite équipe de [TAILLE DE L'ÉQUIPE] personnes. Objectif à 90 jours : [OBJECTIF]. Priorités retenues : [PRIORITÉ 1], [PRIORITÉ 2], [PRIORITÉ 3]. Temps disponible : [HEURES PAR SEMAINE]. Construis un plan sur 12 semaines dans un tableau avec les colonnes : Semaine, Priorité, Action concrète, Livrable, Temps estimé, Indicateur. Regroupe les semaines en 3 phases de 30 jours et donne un nom à chaque phase. Ne dépasse jamais le temps disponible et signale les semaines trop chargées."
+    },
+    {
+      "title": "Le crash test du plan",
+      "use": "Avant de te lancer, pour repérer les failles de ton plan.",
+      "prompt": "Voici mon plan marketing sur 90 jours : [COLLE TON PLAN]. Joue le rôle d'un investisseur sceptique qui a vu beaucoup de plans échouer. Liste les 5 faiblesses les plus graves, de la plus risquée à la moins risquée. Pour chacune, indique : pourquoi c'est un problème, le signal qui montrera que ça déraille, et une correction concrète. Sois franc, pas de compliments. Termine par la seule action à retirer du plan si je manque de temps, et explique pourquoi."
+    }
+  ],
+  "workflow": {
+    "title": "Workflow : ton plan 90 jours dans un Projet Claude",
+    "where": "Un Projet Claude + un Artifact",
+    "steps": [
+      "Crée un Projet « Marketing 2026 » et ajoute en fichiers ta présentation d'activité, tes offres et tes chiffres récents.",
+      "Lance « Le diagnostic express » et réponds aux questions sans enjoliver ta situation.",
+      "Transforme ton envie en objectif avec le deuxième prompt, puis choisis trois priorités maximum.",
+      "Demande le plan sur 12 semaines dans un Artifact pour le relire, le modifier et le copier facilement.",
+      "Ajoute le plan final aux fichiers du Projet pour que chaque nouvelle conversation parte de lui."
+    ]
+  },
+  "checklist": [
+    "Mon objectif tient en une phrase, avec un chiffre et une date.",
+    "Je suis cet objectif avec un seul indicateur principal.",
+    "J'ai trois priorités au maximum, pas une de plus.",
+    "J'ai écrit ce que j'arrête de faire pendant ces 90 jours.",
+    "Chaque semaine du plan a une action et un livrable concrets.",
+    "Le plan respecte le temps dont je dispose vraiment."
+  ],
+  "mistake": "Erreur fréquente : demander directement « fais-moi un plan marketing ». Sans contexte, Claude te rend un plan générique valable pour tout le monde, donc utile pour personne.",
+  "tip": "Astuce Dr. Firas : chaque vendredi, colle tes résultats de la semaine dans le Projet et demande à Claude ce qu'il faut garder, couper ou ajuster la semaine suivante."
+}

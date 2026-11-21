@@ -1,0 +1,70 @@
+{
+  "num": 7,
+  "title": "Réseaux sociaux et LinkedIn",
+  "subtitle": "Publie régulièrement des posts utiles, écrits avec ta voix, sans courir après les likes.",
+  "intro": "Sur LinkedIn, ce qui tient dans la durée, c'est la valeur et l'expérience vécue, pas les astuces pour forcer l'algorithme. Claude t'aide à trouver tes idées, à écrire des hooks clairs, à structurer des carrousels et à tenir un rythme. Tes histoires et ta voix restent les tiennes : Claude les met en forme.",
+  "framework": {
+    "name": "La méthode du post vécu",
+    "steps": [
+      {
+        "t": "Partir du vécu",
+        "d": "Chaque post part d'une situation réelle : un client, un test, une erreur ou une leçon apprise cette semaine."
+      },
+      {
+        "t": "Accrocher en deux lignes",
+        "d": "Les deux premières lignes posent le sujet et la tension, sans promesse exagérée ni faux suspense."
+      },
+      {
+        "t": "Donner avant de demander",
+        "d": "Le post apporte la méthode ou la leçon. S'il y a un lien, il va dans le premier commentaire, jamais dans le post."
+      },
+      {
+        "t": "Tenir le rythme",
+        "d": "Choisis un nombre de posts par semaine que tu peux tenir trois mois, et prépare-les par lots."
+      }
+    ]
+  },
+  "prompts": [
+    {
+      "title": "La banque d'idées vécues",
+      "use": "Quand tu ne sais pas quoi publier cette semaine.",
+      "prompt": "Tu es mon assistant éditorial LinkedIn. Je suis [MÉTIER] et je parle à [CIBLE]. Pose-moi d'abord 8 questions précises sur mon dernier mois : clients, erreurs, tests, conversations marquantes, chiffres de mon activité, opinions que je défends. Attends mes réponses. Ensuite, transforme-les en 10 idées de posts dans un tableau : idée, histoire vécue de départ, leçon pour le lecteur, format conseillé (texte, carrousel, image). Écarte toute idée qui n'a pas une expérience réelle derrière."
+    },
+    {
+      "title": "Des hooks sans piège",
+      "use": "Quand ton post est écrit mais que le début est plat.",
+      "prompt": "Voici le brouillon de mon post LinkedIn : [BROUILLON]. Propose 10 hooks de 2 lignes maximum, répartis en 5 types : constat, erreur avouée, chiffre de mon activité (seulement s'il figure dans le brouillon), idée qui va à contre-courant, question honnête. Interdits : promesse exagérée, faux suspense, demande de commenter, de liker ou de taguer. Pour chaque hook, explique en une phrase ce qui donne envie de lire la suite. Termine en disant lequel tu choisirais, et pourquoi."
+    },
+    {
+      "title": "Un carrousel en 8 slides",
+      "use": "Pour transformer une méthode ou un retour d'expérience en carrousel.",
+      "prompt": "Tu es concepteur de carrousels LinkedIn. Sujet : [SUJET]. Ma méthode ou mon expérience : [NOTES]. Crée un carrousel de 8 slides dans un tableau à 4 colonnes : numéro, titre (8 mots maximum), texte (25 mots maximum), idée de visuel. Slide 1 : la promesse concrète. Slides 2 à 7 : une idée par slide, chacune avec un exemple tiré de mes notes. Slide 8 : le récapitulatif. Rédige ensuite le texte du post qui accompagne le carrousel : 120 mots maximum, phrases courtes, aucune demande d'engagement."
+    },
+    {
+      "title": "La relecture avant publication",
+      "use": "Juste avant de publier, pour garder ta voix.",
+      "prompt": "Relis ce post comme un lecteur exigeant de ma cible [CIBLE] : [POST]. Signale les phrases trop longues, le jargon, les passages qui sonnent faux ou trop « écrits par une IA », les appels à l'engagement artificiels et les promesses sans preuve. Donne une note sur 10 pour le hook, la clarté et l'utilité, avec une raison pour chaque note. Propose ensuite une version corrigée qui garde mes mots et mon ton. Si le post contient un lien, sors-le et place-le à part pour le premier commentaire."
+    }
+  ],
+  "workflow": {
+    "title": "Workflow : une semaine de posts en une session",
+    "where": "Un Projet Claude « LinkedIn » avec tes meilleurs posts en fichiers",
+    "steps": [
+      "Ajoute au Projet tes 10 meilleurs posts et une page sur ton ton, tes sujets et tes mots interdits.",
+      "Lance « La banque d'idées vécues » en début de semaine et garde les idées qui te parlent.",
+      "Rédige chaque brouillon à partir de tes notes, génère les hooks et choisis toi-même le meilleur.",
+      "Passe chaque post dans la relecture, puis retouche à la main ce qui ne te ressemble pas.",
+      "Programme les posts, prépare le premier commentaire avec le lien et réponds aux commentaires le jour même."
+    ]
+  },
+  "checklist": [
+    "Le post part d'une expérience réelle que tu as vécue.",
+    "Les deux premières lignes donnent envie de lire sans rien promettre de faux.",
+    "Aucune phrase ne demande de liker, de commenter un mot ou de taguer quelqu'un.",
+    "Les phrases sont courtes et le texte est aéré, une idée par paragraphe.",
+    "Le lien éventuel est prêt pour le premier commentaire, pas dans le post.",
+    "Tu as relu et réécrit à la main tout ce qui ne sonne pas comme toi."
+  ],
+  "mistake": "Erreur fréquente : publier tel quel un post généré par l'IA. Il se repère vite : phrases trop lisses, listes parfaites, aucune histoire. Tu y perds plus en crédibilité que tu n'y gagnes en temps.",
+  "tip": "Astuce Dr. Firas : transforme tes règles d'écriture LinkedIn en Skill Claude : ton, longueur, mots interdits, lien en commentaire. Claude les applique ensuite à chaque post sans que tu les répètes."
+}

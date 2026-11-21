@@ -1,0 +1,58 @@
+{
+  "num": 2,
+  "title": "Étude de marché",
+  "subtitle": "Écouter tes clients et ton marché avant de décider quoi que ce soit",
+  "intro": "Tes meilleures idées marketing sont déjà écrites quelque part : dans les avis de tes clients, les commentaires chez tes concurrents, les questions posées sur les forums. Claude lit ces sources plus vite que toi, les trie et en sort les mots exacts de ton marché. Ton rôle : lui donner de la vraie matière et vérifier ce qu'il en tire.",
+  "framework": {
+    "name": "La boucle d'écoute marché",
+    "steps": [
+      {"t": "Collecter la matière", "d": "Réunis avis clients, échanges par mail, commentaires et questions de forums dans un seul fichier, sans les filtrer."},
+      {"t": "Trier les verbatims", "d": "Fais classer chaque phrase par thème : problème, désir, objection ou déclencheur d'achat, avec les mots exacts des clients."},
+      {"t": "Comparer les concurrents", "d": "Analyse ce que promettent tes concurrents, ce que leurs clients leur reprochent et ce que personne ne dit encore."},
+      {"t": "Décider des angles", "d": "Garde les trois constats qui reviennent le plus et transforme-les en décisions concrètes pour ton offre et ton message."}
+    ]
+  },
+  "prompts": [
+    {
+      "title": "L'extracteur de verbatims",
+      "use": "Quand tu as un fichier d'avis, de commentaires ou de mails clients.",
+      "prompt": "Tu es chercheur en expérience client. Je joins un fichier contenant des avis et messages de clients de [TON ACTIVITÉ]. Analyse-le en entier. Produis un tableau avec les colonnes : Thème, Type (problème, désir, objection ou déclencheur), Verbatim exact entre guillemets, Fréquence (rare, régulier, très fréquent). Ne reformule jamais les verbatims. Ensuite, liste les 10 expressions que mes clients utilisent le plus souvent et que je pourrais reprendre telles quelles dans mes textes."
+    },
+    {
+      "title": "La veille concurrentielle",
+      "use": "Avec la recherche web activée, pour cartographier tes concurrents.",
+      "prompt": "Utilise la recherche web. Je vends [TON OFFRE] à [TA CIBLE] en [PAYS OU ZONE]. Trouve 5 concurrents directs ou alternatives que ma cible envisage. Pour chacun, donne dans un tableau : nom, promesse principale (citée depuis leur site), prix affiché s'il est public, cible visée, point fort, reproche fréquent des clients si tu en trouves. Cite la source de chaque information et écris « non trouvé » plutôt que de deviner. Termine par 3 espaces que personne n'occupe clairement sur ce marché."
+    },
+    {
+      "title": "Le guide d'entretien client",
+      "use": "Avant d'appeler un client ou un prospect pour l'interroger.",
+      "prompt": "Agis comme un spécialiste des entretiens clients. Je vais interroger [TYPE DE CLIENT] qui a acheté [TON OFFRE] récemment. Mon objectif : comprendre [CE QUE TU VEUX APPRENDRE]. Rédige un guide d'entretien de 30 minutes en 4 parties : contexte avant l'achat, déclencheur, hésitations, résultat obtenu. Pour chaque partie, propose 3 questions ouvertes qui portent sur des faits passés, jamais sur des intentions futures. Ajoute 5 questions à éviter parce qu'elles orientent la réponse, avec la bonne formulation à la place."
+    },
+    {
+      "title": "Le contradicteur",
+      "use": "Quand tu penses avoir compris ton marché et veux le vérifier.",
+      "prompt": "Voici mes conclusions sur mon marché : [TES CONCLUSIONS]. Voici les données sur lesquelles je m'appuie : [RÉSUMÉ OU FICHIER JOINT]. Joue l'avocat du diable. Pour chaque conclusion, dis si les données la soutiennent vraiment, partiellement ou pas du tout. Signale les biais possibles, par exemple un échantillon trop petit ou uniquement des clients satisfaits. Propose ensuite une petite action pour vérifier chaque conclusion douteuse en moins d'une semaine. Réponds sous forme de liste numérotée."
+    }
+  ],
+  "workflow": {
+    "title": "Workflow : ta synthèse marché en une après-midi",
+    "where": "Recherche approfondie + analyse de fichiers",
+    "steps": [
+      "Exporte tes avis clients, mails et commentaires dans un fichier CSV, Excel ou PDF.",
+      "Joins le fichier à Claude et lance « L'extracteur de verbatims » pour obtenir le tableau des thèmes.",
+      "Active la Recherche approfondie et lance « La veille concurrentielle » sur ton marché.",
+      "Demande à Claude de croiser les deux résultats dans un Artifact d'une page : constats, citations, opportunités.",
+      "Passe cette synthèse au « Contradicteur », puis range la version finale dans ton Projet marketing."
+    ]
+  },
+  "checklist": [
+    "Mes verbatims sont des citations exactes, pas des reformulations.",
+    "J'ai analysé des clients satisfaits et des clients mécontents.",
+    "J'ai ouvert la source de chaque info sur un concurrent.",
+    "Je connais les 3 objections qui reviennent le plus souvent.",
+    "J'ai repéré au moins un besoin que mes concurrents ignorent.",
+    "Mes conclusions mènent à des décisions, pas seulement à des constats."
+  ],
+  "mistake": "Erreur fréquente : demander à Claude « que pensent mes clients ? » sans lui fournir de données. Il répond avec des suppositions plausibles, pas avec la voix réelle de ton marché.",
+  "tip": "Astuce Dr. Firas : garde un fichier « verbatims » dans ton Projet et colles-y chaque phrase marquante entendue en appel ou lue en commentaire. C'est vite ta meilleure source de textes."
+}

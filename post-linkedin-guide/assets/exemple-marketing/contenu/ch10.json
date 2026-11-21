@@ -1,0 +1,70 @@
+{
+  "num": 10,
+  "title": "Analytics, reporting et automatisation",
+  "subtitle": "Comprends tes chiffres, reçois un rapport clair chaque semaine et automatise les tâches qui reviennent.",
+  "intro": "Tu as des chiffres partout : site web, réseaux sociaux, CRM, emailing. Le problème n'est pas d'en avoir, c'est de savoir quoi en faire. Claude lit tes exports, explique ce qui a changé et prépare ton rapport hebdo. Une fois la routine stable, tu l'automatises avec les Skills, les connecteurs, Claude Code ou n8n.",
+  "framework": {
+    "name": "La méthode du chiffre à l'action",
+    "steps": [
+      {
+        "t": "Choisir 5 indicateurs",
+        "d": "Garde seulement les chiffres liés à tes objectifs : visites utiles, prospects, ventes, coût d'acquisition, rétention."
+      },
+      {
+        "t": "Lire avec Claude",
+        "d": "Joins tes exports CSV ou Excel et demande ce qui a changé, pourquoi c'est possible et ce qui reste incertain."
+      },
+      {
+        "t": "Décider une action",
+        "d": "Chaque rapport se termine par une ou deux actions concrètes à tester la semaine suivante, avec un responsable."
+      },
+      {
+        "t": "Automatiser la routine",
+        "d": "Quand le rapport est stable, transforme-le en Skill, puis branche tes données avec un connecteur ou n8n."
+      }
+    ]
+  },
+  "prompts": [
+    {
+      "title": "Lire un export sans se tromper",
+      "use": "Quand tu as un fichier de chiffres et aucune idée de quoi en conclure.",
+      "prompt": "Tu es analyste marketing et tu expliques simplement. Voici mon export : [FICHIER CSV OU EXCEL] pour la période [PÉRIODE], comparée à [PÉRIODE PRÉCÉDENTE]. Mon objectif principal : [OBJECTIF]. Calcule les variations des indicateurs clés et présente-les dans un tableau. Explique ensuite les 3 changements les plus importants, avec leurs causes possibles, en séparant ce qui est certain de ce qui ne l'est pas. Ne tire aucune conclusion que les données ne permettent pas. Ajoute un graphique dans un Artifact."
+    },
+    {
+      "title": "Le rapport hebdo en une page",
+      "use": "Chaque lundi, pour toi, ton équipe ou ton client.",
+      "prompt": "Rédige mon rapport marketing de la semaine à partir de ces données : [CHIFFRES OU FICHIERS]. Lecteur : [DIRIGEANT, ÉQUIPE OU CLIENT]. Structure imposée : 1. Résumé en 3 phrases. 2. Tableau des 5 indicateurs avec valeur, variation et tendance. 3. Ce qui a marché. 4. Ce qui a moins marché. 5. Deux actions pour la semaine prochaine, avec un responsable. Ton factuel, aucun adjectif inutile, une page maximum. Signale clairement toute donnée manquante au lieu de la deviner."
+    },
+    {
+      "title": "Le détecteur d'anomalies",
+      "use": "Quand un chiffre bouge fort et que tu ne sais pas pourquoi.",
+      "prompt": "Voici mes chiffres des 12 dernières semaines : [DONNÉES]. Repère les semaines anormales, en hausse comme en baisse. Pour chacune, propose plusieurs explications possibles (saisonnalité, problème de suivi, campagne, changement sur le site, jour férié) et dis-moi comment vérifier laquelle est la bonne. Signale aussi les chiffres incohérents entre eux, par exemple plus de conversions que de clics. Réponds dans un tableau : semaine, indicateur, écart observé, explications possibles, vérification à faire."
+    },
+    {
+      "title": "Choisir comment automatiser",
+      "use": "Quand ton rapport est stable et que tu veux arrêter de le faire à la main.",
+      "prompt": "Je veux automatiser mon reporting marketing. Outils utilisés : [EXEMPLES : GA4, HUBSPOT, GOOGLE SHEETS, META]. Mon niveau technique : [DÉBUTANT OU INTERMÉDIAIRE]. Pose-moi d'abord 5 questions sur mes données, la fréquence du rapport et les personnes qui le lisent. Attends mes réponses. Compare ensuite 3 options dans un tableau : une Skill Claude avec connecteurs, Claude Code avec une tâche planifiée, un workflow n8n. Colonnes : ce qu'il faut installer, difficulté, limites, pour qui. Recommande une option et donne ses 5 premières étapes."
+    }
+  ],
+  "workflow": {
+    "title": "Workflow : un rapport hebdo prêt chaque lundi",
+    "where": "Une Skill Claude + connecteurs, ou n8n pour aller plus loin",
+    "steps": [
+      "Fais le rapport à la main pendant trois semaines avec « Le rapport hebdo en une page » pour fixer le format.",
+      "Transforme le prompt, la structure et tes définitions d'indicateurs en Skill Claude.",
+      "Branche tes sources avec les connecteurs, par exemple Google Drive pour ton tableur de suivi.",
+      "Programme l'exécution chaque lundi avec une tâche planifiée, Claude Code ou un workflow n8n.",
+      "Relis chaque rapport avant de le partager et corrige la Skill dès qu'un chiffre est mal lu."
+    ]
+  },
+  "checklist": [
+    "Tu suis au maximum 5 indicateurs, chacun relié à un objectif précis.",
+    "Chaque indicateur a une définition écrite et une seule source.",
+    "Les périodes comparées ont la même durée et un contexte comparable.",
+    "Le rapport sépare clairement les faits, les hypothèses et les décisions.",
+    "Chaque rapport se termine par une ou deux actions avec un responsable.",
+    "Un humain vérifie les chiffres avant tout envoi automatique."
+  ],
+  "mistake": "Erreur fréquente : automatiser un rapport que personne ne lit ou dont le format change chaque semaine. Tu automatises le désordre. Stabilise d'abord le rapport à la main, puis automatise.",
+  "tip": "Astuce Dr. Firas : ajoute à ta Skill un fichier qui définit chaque indicateur en une phrase. Claude ne confondra plus sessions, visites et visiteurs, et tes rapports resteront comparables."
+}

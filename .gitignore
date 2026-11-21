@@ -1,0 +1,19 @@
+# Configuration personnelle (nom, ids Blotato et Notion)
+post-linkedin-guide/config.json
+
+# Fichiers produits par les scripts
+guide.html
+mockup/
+mockup-post.html
+apercu/
+*.pdf
+image-post-linkedin.png
+
+# Système
+.DS_Store
+__pycache__/
+*.pyc
+.env
+
+# Le PDF d’exemple du README reste dans le repository
+!docs/*.pdf
