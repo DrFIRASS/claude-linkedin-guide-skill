@@ -116,7 +116,7 @@ C'est ce que j'utilise tous les jours. Tu ajoutes des sujets dans Notion, Claude
 
 ### 1. Duplique le modèle Notion
 
-👉 **[Dupliquer la base « File des guides LinkedIn »](https://www.notion.so/41f3d6550fd981a88ff8cad28d66e31e)**
+👉 **[Dupliquer la base « File des guides LinkedIn »](https://automatisation.notion.site/41f3d6550fd981a88ff8cad28d66e31e)**
 (bouton « Dupliquer » en haut à droite de la page)
 
 Les colonnes de la base :
